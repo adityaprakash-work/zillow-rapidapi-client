@@ -1,0 +1,25 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.3
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/propertyExtendedSearch"]["get"]
+    update:
+      x-speakeasy-group: properties
+      x-speakeasy-name-override: search
+    x-speakeasy-metadata:
+      after: sdk.properties.search()
+      before: sdk.<no_group>.propertyExtendedSearch()
+      created_at: 1740254322420
+      reviewed_at: 1740254357375
+      type: method-name
+  - target: $["paths"]["/propertyExtendedSearch"]["get"]["x-speakeasy-name-override"]
+    update: extended_search
+    x-speakeasy-metadata:
+      created_at: 1740254597951
+      type: user-edit

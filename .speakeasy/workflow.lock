@@ -1,0 +1,38 @@
+speakeasyVersion: 1.501.0
+sources:
+    Zillow Property Extended Search API:
+        sourceNamespace: zillow-property-extended-search-api
+        sourceRevisionDigest: sha256:13ce37406b7998ed528c639a11f8fea047471e7e56d299d4f80e2646fb0dc9c5
+        sourceBlobDigest: sha256:03b1b496d7732d7e633b318b323eff0adce542e3ce1db8097d13be342f20f25d
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    zillow-rapidapi-client:
+        source: Zillow Property Extended Search API
+        sourceNamespace: zillow-property-extended-search-api
+        sourceRevisionDigest: sha256:13ce37406b7998ed528c639a11f8fea047471e7e56d299d4f80e2646fb0dc9c5
+        sourceBlobDigest: sha256:03b1b496d7732d7e633b318b323eff0adce542e3ce1db8097d13be342f20f25d
+        codeSamplesNamespace: zillow-property-extended-search-api-python-code-samples
+        codeSamplesRevisionDigest: sha256:56f68cfba513956082f6b8d84e29ee2f9a6d8859e416a6056e2cf2e921c11155
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Zillow Property Extended Search API:
+            inputs:
+                - location: openapi.yml
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/adityaprakash-work/client-packages/zillow-property-extended-search-api
+    targets:
+        zillow-rapidapi-client:
+            target: python
+            source: Zillow Property Extended Search API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/adityaprakash-work/client-packages/zillow-property-extended-search-api-python-code-samples
+                labelOverride:
+                    fixedValue: Python (SDK)
+                blocking: false

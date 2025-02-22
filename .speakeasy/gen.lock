@@ -1,0 +1,90 @@
+lockVersion: 2.0.0
+id: f52b3c7b-6690-49c5-8161-4437bb780ca0
+management:
+  docChecksum: 984d58114eb59a49839a6852b48280cf
+  docVersion: 1.0.0
+  speakeasyVersion: 1.501.0
+  generationVersion: 2.522.1
+  releaseVersion: 0.1.2
+  configChecksum: 362650e67024e9fb9098e32730b4ed40
+features:
+  python:
+    additionalDependencies: 1.0.0
+    core: 5.12.1
+    defaultEnabledRetries: 0.2.0
+    devContainers: 3.0.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 3.1.1
+    globalSecurityCallbacks: 1.0.0
+    globalServerURLs: 3.1.0
+    groups: 3.0.0
+    methodArguments: 1.0.2
+    nameOverrides: 3.0.1
+    nullables: 1.0.1
+    responseFormat: 1.0.1
+    retries: 3.0.2
+    sdkHooks: 1.0.1
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .python-version
+  - .vscode/settings.json
+  - USAGE.md
+  - docs/models/hometype.md
+  - docs/models/listingstatus.md
+  - docs/models/listingsubtype.md
+  - docs/models/property.md
+  - docs/models/propertyextendedsearchrequest.md
+  - docs/models/propertysearchresponse.md
+  - docs/models/propertytype.md
+  - docs/models/sort.md
+  - docs/models/statustype.md
+  - docs/models/utils/retryconfig.md
+  - docs/sdks/properties/README.md
+  - docs/sdks/zillowrapidapiclient/README.md
+  - poetry.toml
+  - py.typed
+  - pylintrc
+  - pyproject.toml
+  - scripts/prepare-readme.py
+  - scripts/publish.sh
+  - src/zillow_rapidapi_client/__init__.py
+  - src/zillow_rapidapi_client/_hooks/__init__.py
+  - src/zillow_rapidapi_client/_hooks/sdkhooks.py
+  - src/zillow_rapidapi_client/_hooks/types.py
+  - src/zillow_rapidapi_client/_version.py
+  - src/zillow_rapidapi_client/basesdk.py
+  - src/zillow_rapidapi_client/httpclient.py
+  - src/zillow_rapidapi_client/models/__init__.py
+  - src/zillow_rapidapi_client/models/apierror.py
+  - src/zillow_rapidapi_client/models/property.py
+  - src/zillow_rapidapi_client/models/propertyextendedsearchop.py
+  - src/zillow_rapidapi_client/models/propertysearchresponse.py
+  - src/zillow_rapidapi_client/properties.py
+  - src/zillow_rapidapi_client/py.typed
+  - src/zillow_rapidapi_client/sdk.py
+  - src/zillow_rapidapi_client/sdkconfiguration.py
+  - src/zillow_rapidapi_client/types/__init__.py
+  - src/zillow_rapidapi_client/types/basemodel.py
+  - src/zillow_rapidapi_client/utils/__init__.py
+  - src/zillow_rapidapi_client/utils/annotations.py
+  - src/zillow_rapidapi_client/utils/enums.py
+  - src/zillow_rapidapi_client/utils/eventstreaming.py
+  - src/zillow_rapidapi_client/utils/forms.py
+  - src/zillow_rapidapi_client/utils/headers.py
+  - src/zillow_rapidapi_client/utils/logger.py
+  - src/zillow_rapidapi_client/utils/metadata.py
+  - src/zillow_rapidapi_client/utils/queryparams.py
+  - src/zillow_rapidapi_client/utils/requestbodies.py
+  - src/zillow_rapidapi_client/utils/retries.py
+  - src/zillow_rapidapi_client/utils/security.py
+  - src/zillow_rapidapi_client/utils/serializers.py
+  - src/zillow_rapidapi_client/utils/url.py
+  - src/zillow_rapidapi_client/utils/values.py
+examples:
+  propertyExtendedSearch: {}
+examplesVersion: 1.0.0
+generatedTests: {}
