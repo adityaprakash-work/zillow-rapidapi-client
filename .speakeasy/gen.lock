@@ -5,8 +5,10 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 1.501.0
   generationVersion: 2.522.1
-  releaseVersion: 0.1.2
-  configChecksum: 362650e67024e9fb9098e32730b4ed40
+  releaseVersion: 0.1.3
+  configChecksum: b27d814e27c84bca7b1d839420118881
+  repoURL: https://github.com/adityaprakash-work/zillow-rapidapi-client.git
+  installationURL: https://github.com/adityaprakash-work/zillow-rapidapi-client.git
 features:
   python:
     additionalDependencies: 1.0.0
