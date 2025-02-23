@@ -12,6 +12,9 @@ targets:
     zillow-rapidapi-client:
         target: python
         source: Zillow Property Extended Search API
+        publish:
+            pypi:
+                token: $pypi_token
         codeSamples:
             registry:
                 location: registry.speakeasyapi.dev/adityaprakash-work/client-packages/zillow-property-extended-search-api-python-code-samples
