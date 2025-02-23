@@ -2,19 +2,20 @@ speakeasyVersion: 1.501.0
 sources:
     Zillow Property Extended Search API:
         sourceNamespace: zillow-property-extended-search-api
-        sourceRevisionDigest: sha256:13ce37406b7998ed528c639a11f8fea047471e7e56d299d4f80e2646fb0dc9c5
-        sourceBlobDigest: sha256:03b1b496d7732d7e633b318b323eff0adce542e3ce1db8097d13be342f20f25d
+        sourceRevisionDigest: sha256:ec0221ad2a1721fb56173710c1345fb2df5d61285b4bf0634c99b3491ea5ac33
+        sourceBlobDigest: sha256:3b6d2909978f1939ac8d1ec9c491faecd1f390effaca82f7d748c0ecf473d326
         tags:
             - latest
+            - speakeasy-sdk-regen-1740273400
             - 1.0.0
 targets:
     zillow-rapidapi-client:
         source: Zillow Property Extended Search API
         sourceNamespace: zillow-property-extended-search-api
-        sourceRevisionDigest: sha256:13ce37406b7998ed528c639a11f8fea047471e7e56d299d4f80e2646fb0dc9c5
-        sourceBlobDigest: sha256:03b1b496d7732d7e633b318b323eff0adce542e3ce1db8097d13be342f20f25d
+        sourceRevisionDigest: sha256:ec0221ad2a1721fb56173710c1345fb2df5d61285b4bf0634c99b3491ea5ac33
+        sourceBlobDigest: sha256:3b6d2909978f1939ac8d1ec9c491faecd1f390effaca82f7d748c0ecf473d326
         codeSamplesNamespace: zillow-property-extended-search-api-python-code-samples
-        codeSamplesRevisionDigest: sha256:56f68cfba513956082f6b8d84e29ee2f9a6d8859e416a6056e2cf2e921c11155
+        codeSamplesRevisionDigest: sha256:5d9d673876c998deb50c7e2d2bee4007875ab9d72d974afb552d5b6490883de0
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
