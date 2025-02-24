@@ -12,7 +12,7 @@ Developer-friendly & type-safe Python SDK specifically catered to leverage *zill
 <!-- Start Summary [summary] -->
 ## Summary
 
-This SDK is a Python client for [RapidAPI Zillow](https://rapidapi.com/apimaker/api/zillow-com1) API. It is designed to be a developer-friendly and type-safe way to interact with the API. The SDK is generated using the [Speakeasy SDK Generator](https://www.speakeasy.com/?utm_source=zillow-rapidapi-client&utm_campaign=python) and is built on top of the [httpx](https://www.python-httpx.org/) library.
+Zillow Property Extended Search API: API for searching properties using various filters.
 <!-- End Summary [summary] -->
 
 <!-- Start Table of Contents [toc] -->
@@ -50,7 +50,7 @@ The SDK can be installed with either *pip* or *poetry* package managers.
 *PIP* is the default package installer for Python, enabling easy installation and management of packages from PyPI via the command line.
 
 ```bash
-pip install git+https://github.com/adityaprakash-work/zillow-rapidapi-client.git
+pip install zillow-rapidapi-client
 ```
 
 ### Poetry
@@ -58,7 +58,7 @@ pip install git+https://github.com/adityaprakash-work/zillow-rapidapi-client.git
 *Poetry* is a modern tool that simplifies dependency management and package publishing by using a single `pyproject.toml` file to handle project metadata and dependencies.
 
 ```bash
-poetry add git+https://github.com/adityaprakash-work/zillow-rapidapi-client.git
+poetry add zillow-rapidapi-client
 ```
 
 ### Shell and script usage with `uv`

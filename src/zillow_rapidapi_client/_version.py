@@ -3,10 +3,10 @@
 import importlib.metadata
 
 __title__: str = "zillow-rapidapi-client"
-__version__: str = "0.1.3"
+__version__: str = "0.1.4"
 __openapi_doc_version__: str = "1.0.0"
-__gen_version__: str = "2.522.1"
-__user_agent__: str = "speakeasy-sdk/python 0.1.3 2.522.1 1.0.0 zillow-rapidapi-client"
+__gen_version__: str = "2.522.5"
+__user_agent__: str = "speakeasy-sdk/python 0.1.4 2.522.5 1.0.0 zillow-rapidapi-client"
 
 try:
     if __package__ is not None:

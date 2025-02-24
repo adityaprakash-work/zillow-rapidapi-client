@@ -10,9 +10,13 @@ from .property import (
     PropertyTypedDict,
 )
 from .propertyextendedsearchop import (
+    DaysOn,
     HomeType,
+    LotSizeMax,
+    LotSizeMin,
     PropertyExtendedSearchRequest,
     PropertyExtendedSearchRequestTypedDict,
+    SoldInLast,
     Sort,
     StatusType,
 )
@@ -24,10 +28,13 @@ from .propertysearchresponse import (
 
 __all__ = [
     "APIError",
+    "DaysOn",
     "HomeType",
     "ListingStatus",
     "ListingSubType",
     "ListingSubTypeTypedDict",
+    "LotSizeMax",
+    "LotSizeMin",
     "Property",
     "PropertyExtendedSearchRequest",
     "PropertyExtendedSearchRequestTypedDict",
@@ -35,6 +42,7 @@ __all__ = [
     "PropertySearchResponseTypedDict",
     "PropertyType",
     "PropertyTypedDict",
+    "SoldInLast",
     "Sort",
     "StatusType",
 ]

@@ -1,21 +1,21 @@
-speakeasyVersion: 1.501.0
+speakeasyVersion: 1.501.1
 sources:
     Zillow Property Extended Search API:
         sourceNamespace: zillow-property-extended-search-api
-        sourceRevisionDigest: sha256:ec0221ad2a1721fb56173710c1345fb2df5d61285b4bf0634c99b3491ea5ac33
-        sourceBlobDigest: sha256:3b6d2909978f1939ac8d1ec9c491faecd1f390effaca82f7d748c0ecf473d326
+        sourceRevisionDigest: sha256:1da49974c2d368aa524d975c3e7905e639bcd7499457647a1f298dc81e1a361e
+        sourceBlobDigest: sha256:7a128ca11928c88e92f3662484bf0c2db410a0e42ff6709830a86b441341a88b
         tags:
             - latest
-            - speakeasy-sdk-regen-1740273400
+            - speakeasy-sdk-regen-1740401649
             - 1.0.0
 targets:
     zillow-rapidapi-client:
         source: Zillow Property Extended Search API
         sourceNamespace: zillow-property-extended-search-api
-        sourceRevisionDigest: sha256:ec0221ad2a1721fb56173710c1345fb2df5d61285b4bf0634c99b3491ea5ac33
-        sourceBlobDigest: sha256:3b6d2909978f1939ac8d1ec9c491faecd1f390effaca82f7d748c0ecf473d326
+        sourceRevisionDigest: sha256:1da49974c2d368aa524d975c3e7905e639bcd7499457647a1f298dc81e1a361e
+        sourceBlobDigest: sha256:7a128ca11928c88e92f3662484bf0c2db410a0e42ff6709830a86b441341a88b
         codeSamplesNamespace: zillow-property-extended-search-api-python-code-samples
-        codeSamplesRevisionDigest: sha256:5d9d673876c998deb50c7e2d2bee4007875ab9d72d974afb552d5b6490883de0
+        codeSamplesRevisionDigest: sha256:e57555dbb69864d12de1f2d98c3c7b24baf2596c401b2eea83f2b33ec8259fec
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -31,6 +31,9 @@ workflow:
         zillow-rapidapi-client:
             target: python
             source: Zillow Property Extended Search API
+            publish:
+                pypi:
+                    token: $pypi_token
             codeSamples:
                 registry:
                     location: registry.speakeasyapi.dev/adityaprakash-work/client-packages/zillow-property-extended-search-api-python-code-samples
