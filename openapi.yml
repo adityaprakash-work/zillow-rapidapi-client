@@ -1,7 +1,9 @@
 openapi: 3.1.0
 info:
   title: Zillow Property Extended Search API
-  description: API for searching properties using various filters.
+  description: |
+    Python client for RapidAPI Zillow Proxy. This API allows you to search for
+    properties by various criteria.
   version: 1.0.0
 servers:
   - url: https://zillow-com1.p.rapidapi.com
