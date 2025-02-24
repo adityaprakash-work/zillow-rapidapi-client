@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Zillow Property Extended Search API
+  title: RapidAPI Zillow Proxy python SDK
   description: |
     Python client for RapidAPI Zillow Proxy. This API allows you to search for
     properties by various criteria.
