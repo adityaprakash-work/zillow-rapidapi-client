@@ -14,7 +14,9 @@ paths:
       parameters:
         - name: location
           in: query
-          description: Location details (address, county, neighborhood, or Zip code). Required if polygon or coordinates are empty.
+          description: |
+            Location details (address, county, neighborhood, or Zip code). Required if 
+            polygon or coordinates are empty.
           schema:
             type: string
             maxLength: 100
@@ -61,6 +63,14 @@ paths:
               - Bathrooms
               - Square_Feet
               - Lot_Size
+        - name: polygon
+          in: query
+          description: |
+            Polygon coordinates in the format: lon lat,lon1 lat1,lon2 lat2. It is 
+            required if the location or coordinates are empty. The last pair must be the 
+            same as the first pair.
+          schema:
+            type: string
         - name: minPrice
           in: query
           description: Minimum price filter.
@@ -71,6 +81,394 @@ paths:
           description: Maximum price filter.
           schema:
             type: number
+        - name: rentMinPrice
+          in: query
+          description: Minimum rent price filter (if status_type = ForRent).
+          schema:
+            type: number
+        - name: rentMaxPrice
+          in: query
+          description: Maximum rent price filter (if status_type = ForRent).
+          schema:
+            type: number
+        - name: bathsMin
+          in: query
+          description: Bathrooms min count.
+          schema:
+            type: number
+        - name: bathsMax
+          in: query
+          description: Bathrooms max count.
+          schema:
+            type: number
+        - name: bedsMin
+          in: query
+          description: Bedrooms min count.
+          schema:
+            type: number
+        - name: bedsMax
+          in: query
+          description: Bedrooms max count.
+          schema:
+            type: number
+        - name: sqftMin
+          in: query
+          description: Square Feet min value.
+          schema:
+            type: number
+        - name: sqftMax
+          in: query
+          description: Square Feet max value.
+          schema:
+            type: number
+        - name: buildYearMin
+          in: query
+          description: Year Built min value.
+          schema:
+            type: number
+        - name: buildYearMax
+          in: query
+          description: Year Built max value.
+          schema:
+            type: number
+        - name: daysOn
+          in: query
+          description: |
+            Days on Z. Use with status_type='ForSale' or status_type='ForRent'.
+          schema:
+            type: string
+            enum:
+              - "1"
+              - "7"
+              - "14"
+              - "30"
+              - "90"
+              - "6m"
+              - "12m"
+              - "24m"
+              - "36m"
+        - name: soldInLast
+          in: query
+          description: |
+            Sold in the last. Use with status_type='RecentlySold'.
+          schema:
+            type: string
+            enum:
+              - "1"
+              - "7"
+              - "14"
+              - "30"
+              - "90"
+              - "6m"
+              - "12m"
+              - "24m"
+              - "36m"
+        - name: isBasementFinished
+          in: query
+          description: Basement filter. Set it to 1 if needed.
+          schema:
+            type: number
+        - name: isBasementUnfinished
+          in: query
+          description: Basement filter. Set it to 1 if needed.
+          schema:
+            type: number
+        - name: isPendingUnderContract
+          in: query
+          description: Pending & Under Contract filter. Set it to 1 if needed.
+          schema:
+            type: number
+        - name: isAcceptingBackupOffers
+          in: query
+          description: Accepting Backup Offers filter. Set it to 1 if needed.
+          schema:
+            type: number
+        - name: isComingSoon
+          in: query
+          description: |
+            Coming Soon listings are homes that will soon be on the market. Set it to 1 
+            if needed.
+          schema:
+            type: boolean
+        - name: otherListings
+          in: query
+          description: |
+            If set to 1, the results will only include data from the Other Listings tab.
+          schema:
+            type: boolean
+        - name: isNewConstruction
+          in: query
+          description: |
+            New Construction filter. Set it to 1 or true if you only need properties 
+            with New Construction status.
+          schema:
+            type: boolean
+        - name: keywords
+          in: query
+          description: Keywords filter for property search.
+          schema:
+            type: string
+        - name: lotSizeMin
+          in: query
+          description: Minimum lot size.
+          schema:
+            type: string
+            enum:
+              - "1,000 sqft"
+              - "2,000 sqft"
+              - "3,000 sqft"
+              - "4,000 sqft"
+              - "5,000 sqft"
+              - "7,500 sqft"
+              - "1/4 acre/10,890 sqft"
+              - "1/2 acre/21,780 sqft"
+              - "1 acre/43,560 sqft"
+        - name: lotSizeMax
+          in: query
+          description: Maximum lot size.
+          schema:
+            type: string
+            enum:
+              - "1,000 sqft"
+              - "2,000 sqft"
+              - "3,000 sqft"
+              - "4,000 sqft"
+              - "5,000 sqft"
+              - "7,500 sqft"
+              - "1/4 acre/10,890 sqft"
+              - "1/2 acre/21,780 sqft"
+              - "1 acre/43,560 sqft"
+              - "2 acres/87,120 sqft"
+              - "5 acres/217,800 sqft"
+              - "10 acres/435,600 sqft"
+              - "20 acres/871,200 sqft"
+              - "50 acres/2,178,000 sqft"
+              - "100 acres/4,356,000 sqft"
+        - name: saleByAgent
+          in: query
+          description: |
+            Default - true. To get FSBO set 
+            saleByAgent=false&saleByOwner=true&otherListings=true.
+          schema:
+            type: string
+        - name: saleByOwner
+          in: query
+          description: |
+            Default - true. To get only FSBO set 
+            saleByAgent=false&saleByOwner=true&otherListings=true.
+          schema:
+            type: string
+        - name: isForSaleForeclosure
+          in: query
+          description: If you only need to get ForSaleForeclosure set to true or 1.
+          schema:
+            type: boolean
+        - name: isWaterfront
+          in: query
+          schema:
+            type: boolean
+        - name: hasPool
+          in: query
+          schema:
+            type: boolean
+        - name: hasAirConditioning
+          in: query
+          schema:
+            type: boolean
+        - name: isCityView
+          in: query
+          schema:
+            type: boolean
+        - name: isMountainView
+          in: query
+          schema:
+            type: boolean
+        - name: isWaterView
+          in: query
+          schema:
+            type: boolean
+        - name: isParkView
+          in: query
+          schema:
+            type: boolean
+        - name: isOpenHousesOnly
+          in: query
+          description: Must have open house.
+          schema:
+            type: boolean
+        - name: is3dHome
+          in: query
+          description: Must have 3D Tour.
+          schema:
+            type: boolean
+        - name: coordinates
+          in: query
+          description: |
+            It is required if the location or polygon is empty.
+            Format: lon lat,diameter. Diameter in miles from 1 to 99 -118.51750373840332 
+            34.007063913440916,20
+          schema:
+            type: string
+        - name: hoa
+          in: query
+          description: Max HOA.
+          schema:
+            type: number
+        - name: includeHomesWithNoHoaData
+          in: query
+          description: Default - true.
+          schema:
+            type: boolean
+        - name: isAuction
+          in: query
+          description: Auctions. Default true.
+          schema:
+            type: boolean
+        - name: schools
+          in: query
+          description: |
+            Available values: elementary, public, private, middle, charter, high
+            For multiple selection, separate with comma: middle,high
+          schema:
+            type: string
+        - name: schoolsRating
+          in: query
+          description: Min school ratings. From 1 to 10.
+          schema:
+            type: string
+        - name: includeUnratedSchools
+          in: query
+          description: Include schools with no rating.
+          schema:
+            type: boolean
+        - name: hasGarage
+          in: query
+          description: Must have a garage. Default value false.
+          schema:
+            type: boolean
+        - name: parkingSpots
+          in: query
+          description: Parking Spots. Max value - 4.
+          schema:
+            type: number
+        - name: isForeclosed
+          in: query
+          schema:
+            type: boolean
+        - name: isPreForeclosure
+          in: query
+          schema:
+            type: boolean
+        - name: isEntirePlace
+          in: query
+          description: |
+            Default - true. Apply when status_type = 'ForRent'. Set it to false if you 
+            need only a room.
+          schema:
+            type: boolean
+        - name: isRoom
+          in: query
+          description: |
+            Default - false. Apply when status_type = 'ForRent'. Set it true and 
+            isEntirePlace to false if you need only a room.
+          schema:
+            type: boolean
+        - name: largeDogsAllowed
+          in: query
+          description: Allows large dogs. Only For Rent.
+          schema:
+            type: boolean
+        - name: smallDogsAllowed
+          in: query
+          description: Allows small dogs. Only For Rent.
+          schema:
+            type: boolean
+        - name: catsAllowed
+          in: query
+          description: Allows cats. Only For Rent.
+          schema:
+            type: boolean
+        - name: noPets
+          in: query
+          description: No pets. Only For Rent.
+          schema:
+            type: boolean
+        - name: moveInDate
+          in: query
+          description: Move-in Date. Only For Rent.
+          schema:
+            type: string
+            format: date
+        - name: parkingAvailable
+          in: query
+          description: On-site Parking. Only For Rent.
+          schema:
+            type: boolean
+        - name: inUnitLaundry
+          in: query
+          description: In-unit Laundry. Only For Rent.
+          schema:
+            type: boolean
+        - name: acceptsApplications
+          in: query
+          description: Accepts Zillow Applications. Only For Rent.
+          schema:
+            type: boolean
+        - name: incomeRestricted
+          in: query
+          description: Income restricted. Only For Rent.
+          schema:
+            type: boolean
+        - name: hardwoodFloor
+          in: query
+          description: Hardwood Floors. Only For Rent.
+          schema:
+            type: boolean
+        - name: disabledAccess
+          in: query
+          description: Disabled Access. Only For Rent.
+          schema:
+            type: boolean
+        - name: utilitiesIncluded
+          in: query
+          description: Utilities Included. Only For Rent.
+          schema:
+            type: boolean
+        - name: shortTermLease
+          in: query
+          description: Short term lease available. Only For Rent.
+          schema:
+            type: boolean
+        - name: furnished
+          in: query
+          description: Furnished. Only For Rent.
+          schema:
+            type: boolean
+        - name: outdoorSpace
+          in: query
+          description: Outdoor space. Only For Rent.
+          schema:
+            type: boolean
+        - name: controlledAccess
+          in: query
+          description: Controlled access. Only For Rent.
+          schema:
+            type: boolean
+        - name: highSpeedInternet
+          in: query
+          description: High speed internet. Only For Rent.
+          schema:
+            type: boolean
+        - name: elevator
+          in: query
+          description: Elevator. Only For Rent.
+          schema:
+            type: boolean
+        - name: multiFamilyBuilding
+          in: query
+          description: Apartment Community. Only For Rent.
+          schema:
+            type: boolean
       responses:
         "200":
           description: Successful response
