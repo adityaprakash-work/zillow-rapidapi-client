@@ -9,15 +9,10 @@ Developer-friendly & type-safe Python SDK specifically catered to leverage *zill
     </a>
 </div>
 
-
-<br /><br />
-> [!IMPORTANT]
-> This SDK is not yet ready for production use. To complete setup please follow the steps outlined in your [workspace](https://app.speakeasy.com/org/adityaprakash-work/client-packages). Delete this section before > publishing to a package manager.
-
 <!-- Start Summary [summary] -->
 ## Summary
 
-Zillow Property Extended Search API: API for searching properties using various filters.
+This SDK is a Python client for [RapidAPI Zillow](https://rapidapi.com/apimaker/api/zillow-com1) API. It is designed to be a developer-friendly and type-safe way to interact with the API. The SDK is generated using the [Speakeasy SDK Generator](https://www.speakeasy.com/?utm_source=zillow-rapidapi-client&utm_campaign=python) and is built on top of the [httpx](https://www.python-httpx.org/) library.
 <!-- End Summary [summary] -->
 
 <!-- Start Table of Contents [toc] -->
@@ -42,10 +37,6 @@ Zillow Property Extended Search API: API for searching properties using various 
 
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
-
-> [!TIP]
-> To finish publishing your SDK to PyPI you must [run your first generation action](https://www.speakeasy.com/docs/github-setup#step-by-step-guide).
-
 
 > [!NOTE]
 > **Python version upgrade policy**
