@@ -15,7 +15,10 @@ from zillow_rapidapi_client.types import OptionalNullable, UNSET
 
 
 class ZillowRapidapiClient(BaseSDK):
-    r"""Zillow Property Extended Search API: API for searching properties using various filters."""
+    r"""RapidAPI Zillow Proxy python SDK: Python client for RapidAPI Zillow Proxy. This API allows you to search for
+    properties by various criteria.
+
+    """
 
     properties: Properties
 

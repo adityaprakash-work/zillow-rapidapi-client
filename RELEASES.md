@@ -17,3 +17,13 @@ Based on:
 - [python v0.1.4] .
 ### Releases
 - [PyPI v0.1.4] https://pypi.org/project/zillow-rapidapi-client/0.1.4 - .
+
+## 2025-02-25 01:13:20
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.502.0 (2.524.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v0.1.5] .
+### Releases
+- [PyPI v0.1.5] https://pypi.org/project/zillow-rapidapi-client/0.1.5 - .
