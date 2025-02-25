@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: f52b3c7b-6690-49c5-8161-4437bb780ca0
 management:
-  docChecksum: ca4876035aa24eb8fbbf2309f23979df
+  docChecksum: b483d178e70ca413047da80468e1421e
   docVersion: 1.0.0
-  speakeasyVersion: 1.501.1
-  generationVersion: 2.522.5
-  releaseVersion: 0.1.4
-  configChecksum: 1cfb6347164067f805d0d1c8a2c4e84d
+  speakeasyVersion: 1.502.0
+  generationVersion: 2.524.1
+  releaseVersion: 0.1.5
+  configChecksum: d8971ba4d7b931c8f562f1e4372b4626
   repoURL: https://github.com/adityaprakash-work/zillow-rapidapi-client.git
   installationURL: https://github.com/adityaprakash-work/zillow-rapidapi-client.git
   published: true

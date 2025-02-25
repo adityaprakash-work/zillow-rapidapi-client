@@ -2,6 +2,8 @@
 
 ## Overview
 
-Zillow Property Extended Search API: API for searching properties using various filters.
+RapidAPI Zillow Proxy python SDK: Python client for RapidAPI Zillow Proxy. This API allows you to search for
+properties by various criteria.
+
 
 ### Available Operations
